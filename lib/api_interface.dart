@@ -9,6 +9,6 @@ class ApiInterface {
   static final String detailVideo = 'https://www.googleapis.com/youtube/v3/videos?part=contentDetails,%20statistics,%20snippet&id=';
 
 
-  static final String secretApi = 'AIzaSyC4tF0juARGXSKEoTN_j1n40oNHCCm67VU';
+  static final String secretApi = ' ->> Your Apikey Youtube Here <<- ';
   
 }

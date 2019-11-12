@@ -14,8 +14,9 @@ class ItemListCategory extends StatelessWidget {
         ApiInterface.baseUrl + 'upload/category/' + catItem.categoryImage;
     return InkWell(
       onTap: () {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => CategoryByIdPosts(catItem.cid, catItem.categoryName)));
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) =>
+                CategoryByIdPosts(catItem.cid, catItem.categoryName)));
       },
       child: Container(
         child: Column(
@@ -47,20 +48,25 @@ class ItemListCategory extends StatelessWidget {
                   right: 18,
                   top: 18,
                   child: CircleAvatar(
-                    backgroundColor: Colors.red,
-                    maxRadius: 16,
-                    child: Center(
-                        child: Text(
-                      catItem.videoCount.toString(),
-                      style: TextStyle(color: Colors.white),
-                    )),
+                    backgroundColor: Colors.black.withOpacity(0.5),
+                    maxRadius: 20,
+                    child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text('Eps', style: TextStyle(fontSize: 10),),
+                          Text(
+                            catItem.videoCount.toString(),
+                            style: TextStyle(fontSize: 14,color: Colors.white),
+                          ),
+                        ]),
                   ),
                 ),
               ],
             ),
             Text(catItem.categoryName,
                 style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 14,
                     color: Colors.indigo,
                     fontWeight: FontWeight.bold)),
           ],

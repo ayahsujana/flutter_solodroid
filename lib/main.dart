@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Youtube',
       theme: ThemeData(
         primarySwatch: Colors.red,
+        fontFamily: "Raleway"
       ),
       home: HomePage(),
     );
