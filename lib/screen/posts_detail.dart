@@ -1,11 +1,10 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_solodroid/videoModel.dart';
+import 'package:flutter_solodroid/bloc/bloc.dart';
+import 'package:flutter_solodroid/model/detailModel.dart';
+import 'package:flutter_solodroid/model/videoModel.dart';
 import 'package:youtube_player/youtube_player.dart';
-
-import 'bloc.dart';
-import 'detailModel.dart';
 
 class PostsDetail extends StatefulWidget {
   final Post items;
@@ -32,11 +31,17 @@ class _PostsDetailState extends State<PostsDetail> {
         actions: <Widget>[
           IconButton(
             onPressed: null,
-            icon: Icon(Icons.favorite_border, color: Colors.white,),
+            icon: Icon(
+              Icons.favorite_border,
+              color: Colors.white,
+            ),
           ),
           IconButton(
             onPressed: null,
-            icon: Icon(Icons.search, color: Colors.white,),
+            icon: Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
           ),
         ],
       ),
@@ -113,11 +118,15 @@ class _PostsDetailState extends State<PostsDetail> {
       children: <Widget>[
         Padding(
           padding: EdgeInsets.all(8.0),
-          child: Text(items.title, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+          child: Text(
+            items.title,
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          ),
         ),
         Padding(
           padding: EdgeInsets.only(left: 8.0, bottom: 16.0, top: 8.0),
-          child: Text(views + ' views', style: Theme.of(context).textTheme.body2),
+          child:
+              Text(views + ' views', style: Theme.of(context).textTheme.body2),
         ),
         Padding(
           padding: EdgeInsets.all(16.0),
@@ -152,7 +161,7 @@ class _PostsDetailState extends State<PostsDetail> {
         children: <Widget>[
           Padding(
             padding: EdgeInsets.only(bottom: 8.0),
-            child: Icon(icon, size: 30,color: Colors.grey),
+            child: Icon(icon, size: 30, color: Colors.grey),
           ),
           Text(text, style: Theme.of(context).textTheme.body2)
         ],

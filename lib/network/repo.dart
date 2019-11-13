@@ -1,8 +1,8 @@
-import 'package:flutter_solodroid/categoryModel.dart';
-import 'package:flutter_solodroid/rest_api.dart';
-import 'package:flutter_solodroid/videoModel.dart';
 
-import 'detailModel.dart';
+import 'package:flutter_solodroid/model/categoryModel.dart';
+import 'package:flutter_solodroid/model/detailModel.dart';
+import 'package:flutter_solodroid/model/videoModel.dart';
+import 'package:flutter_solodroid/network/rest_api.dart';
 
 class Repo {
   final apiInterface = RestApiProvider();

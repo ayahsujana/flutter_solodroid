@@ -1,9 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-
-import 'api_interface.dart';
-import 'categoryModel.dart';
-import 'category_posts.dart';
+import 'package:flutter_solodroid/helper/api_interface.dart';
+import 'package:flutter_solodroid/model/categoryModel.dart';
+import 'package:flutter_solodroid/screen/category_posts.dart';
 
 class ItemListCategory extends StatelessWidget {
   final Category catItem;

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_solodroid/videoModel.dart';
-import 'package:flutter_solodroid/widget_getPostThumbnail.dart';
-
-import 'bloc.dart';
+import 'package:flutter_solodroid/bloc/bloc.dart';
+import 'package:flutter_solodroid/model/videoModel.dart';
+import 'package:flutter_solodroid/widget/widget_getPostThumbnail.dart';
 
 class VideoPosts extends StatefulWidget {
   @override
   _VideoPostsState createState() => _VideoPostsState();
 }
 
-class _VideoPostsState extends State<VideoPosts> with AutomaticKeepAliveClientMixin<VideoPosts>{
+class _VideoPostsState extends State<VideoPosts>
+    with AutomaticKeepAliveClientMixin<VideoPosts> {
   final videoPosts = VideoPostsBloc();
 
   @override
@@ -58,7 +58,7 @@ class PostsListBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: items.posts.length,
-      itemBuilder: (context, i){
+      itemBuilder: (context, i) {
         var itemPosts = items.posts[i];
         return ItemListVideos(itemPosts);
       },

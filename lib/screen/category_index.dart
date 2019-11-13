@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_solodroid/widget_getCategoryThumbnail.dart';
-
-import 'bloc.dart';
-import 'categoryModel.dart';
+import 'package:flutter_solodroid/bloc/bloc.dart';
+import 'package:flutter_solodroid/model/categoryModel.dart';
+import 'package:flutter_solodroid/widget/widget_getCategoryThumbnail.dart';
 
 class CategoryPosts extends StatefulWidget {
   @override
   _CategoryPostsState createState() => _CategoryPostsState();
 }
 
-class _CategoryPostsState extends State<CategoryPosts> with AutomaticKeepAliveClientMixin<CategoryPosts> {
+class _CategoryPostsState extends State<CategoryPosts>
+    with AutomaticKeepAliveClientMixin<CategoryPosts> {
   final catPosts = VideoCategoryBloc();
 
   @override
@@ -58,9 +58,8 @@ class CategoryListBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       itemCount: items.categories.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2
-      ),
+      gridDelegate:
+          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (context, i) {
         var itemPosts = items.categories[i];
         return ItemListCategory(itemPosts);

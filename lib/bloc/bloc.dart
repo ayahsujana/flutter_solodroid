@@ -1,9 +1,9 @@
-import 'package:flutter_solodroid/categoryModel.dart';
-import 'package:flutter_solodroid/videoModel.dart';
+import 'package:flutter_solodroid/model/categoryModel.dart';
+import 'package:flutter_solodroid/model/detailModel.dart';
+import 'package:flutter_solodroid/model/videoModel.dart';
 import 'package:rxdart/rxdart.dart';
 
 import 'base_bloc.dart';
-import 'detailModel.dart';
 
 class VideoPostsBloc extends BaseBloc {
   final video = PublishSubject<VideoModel>();

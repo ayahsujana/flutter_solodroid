@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_solodroid/screen_orientation.dart';
+import 'package:flutter_solodroid/helper/screen_orientation.dart';
 import 'package:flutter_solodroid/widget/custom_list_drawer.dart';
 
 import 'category_index.dart';

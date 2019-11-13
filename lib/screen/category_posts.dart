@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_solodroid/videoModel.dart';
-import 'package:flutter_solodroid/widget_getPostThumbnail.dart';
-
-import 'bloc.dart';
+import 'package:flutter_solodroid/bloc/bloc.dart';
+import 'package:flutter_solodroid/model/videoModel.dart';
+import 'package:flutter_solodroid/widget/widget_getPostThumbnail.dart';
 
 class CategoryByIdPosts extends StatefulWidget {
   final int catId;

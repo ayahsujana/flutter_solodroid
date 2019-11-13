@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_solodroid/posts_detail.dart';
-import 'package:flutter_solodroid/videoModel.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_solodroid/model/videoModel.dart';
+import 'package:flutter_solodroid/screen/posts_detail.dart';
 
 class ItemListVideos extends StatelessWidget {
   final Post items;

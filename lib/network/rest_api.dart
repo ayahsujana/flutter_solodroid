@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_solodroid/api_interface.dart';
-import 'package:flutter_solodroid/categoryModel.dart';
-import 'package:flutter_solodroid/videoModel.dart';
+import 'package:flutter_solodroid/helper/api_interface.dart';
+import 'package:flutter_solodroid/model/categoryModel.dart';
+import 'package:flutter_solodroid/model/detailModel.dart';
+import 'package:flutter_solodroid/model/videoModel.dart';
 import 'package:http/http.dart' as http;
 
-import 'detailModel.dart';
 
 class RestApiProvider {
   Future<VideoModel> getPosts() async {
